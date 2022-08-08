@@ -46,7 +46,7 @@ except URLError as e:
 #starting with snowfalke connector
 streamlit.header("The fruit load list contains:")
 def get_fruit_load_list():
-  with my_cnx.cursor() as my_cur
+  with my_cnx.cursor() as my_cur:
   my_cur.execute("SELECT * from fruit_load_list")
   retun my_cur.fetchall()
 
